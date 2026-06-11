@@ -329,6 +329,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 .gh-article-header {
     position: relative;
     justify-items: start;
+    color: #006E26; /*TODO*/
 }
 
 .gh-article-tag {
@@ -926,4 +927,16 @@ body:not(.home-template) .gh-topic-grid .gh-card {
         justify-self: end;
         margin-top: 0;
     }
+}
+
+.gh-article a, h2, h3 {
+    color: #C4121A;
+}
+
+.gh-article a {
+    text-decoration: none;
+}
+
+.gh-article a:hover {
+    text-decoration: underline;
 }

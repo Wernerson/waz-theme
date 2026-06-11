@@ -74,7 +74,7 @@
             {{#if @site.members_enabled}}
             {{#unless @member}}
                 <section class="gh-subscribe">
-                    <h3 class="gh-subscribe-title">{{t "Subscribe to {sitetitle}" sitetitle=@site.title}}</h3>
+                    <h3 class="gh-subscribe-title">{{@custom.email_signup_header}}</h3>
                     {{#if @custom.email_signup_text}}
                         <div class="gh-subscribe-description">{{@custom.email_signup_text}}</div>
                     {{/if}}
