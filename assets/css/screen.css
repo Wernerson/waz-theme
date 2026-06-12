@@ -347,6 +347,17 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     margin-bottom: 2rem;
 }
 
+.gh-cover-content .gh-article-tags {
+    justify-content: start;
+    background: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.gh-cover-content .gh-article-tags .gh-article-tag {
+    margin-bottom: 0;
+}
+
 .gh-article-tag {
     margin-bottom: 1rem;
     font-size: 1.2rem;
