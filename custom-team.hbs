@@ -38,8 +38,19 @@
                                 <a href="{{url}}">
                                     <h2>{{name}}</h2>
                                 </a>
+
+                                <b>
+                                    {{#if location}}
+                                        {{location}}
+                                    {{else}}
+                                        Redaktor/Redaktorin
+                                    {{/if}}
+                                </b>
+
                                 {{#if bio}}
-                                    <div class="gh-author-bio">{{bio}}</div>
+                                    <div class="gh-author-bio">
+                                        «{{bio}}»
+                                    </div>
                                 {{/if}}
                             </div>
                         </div>

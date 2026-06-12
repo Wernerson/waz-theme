@@ -14,10 +14,15 @@
                     </figure>
 
                     <div class="gh-team-member-info">
-                        <h2>{{name}}</h2>
+                        <h2>{{name}} </h2>
+
                         {{#if bio}}
-                            <div class="gh-author-bio">{{bio}}</div>
+                            <div class="gh-author-bio">
+                                «{{bio}}»
+                            </div>
                         {{/if}}
+
+                        <a href="mailto:{{location}}">{{> icons/email}}</a>
                     </div>
                 </div>
             </section>
