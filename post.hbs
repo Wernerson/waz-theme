@@ -8,7 +8,6 @@
                 <div class="gh-article-tags">
                     {{#foreach tags}}
                         <a class="gh-article-tag" href="{{url}}">{{name}}</a>
-                        {{#unless @last}}&nbsp;/&nbsp;{{/unless}}
                     {{/foreach}}
                 </div>
 
@@ -26,6 +25,17 @@
             <section class="gh-content gh-canvas">
                 {{content}}
             </section>
+
+            <footer class="gh-article-footer gh-canvas">
+                <div class="gh-author-name-list">
+                    {{#foreach authors}}
+                        <h4 class="gh-author-name">
+                            <a href="{{url}}">{{name}}</a>
+                        </h4>
+                        {{#unless @last}}&nbsp;/&nbsp;{{/unless}}
+                    {{/foreach}}
+                </div>
+            </footer>
 
         </article>
     {{/post}}

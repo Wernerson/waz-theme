@@ -330,8 +330,25 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     color: #006E26; /*TODO*/
 }
 
+.gh-article-title {
+    color: #006E26; /*TODO*/
+}
+
+.gh-article-tags {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    background-image: radial-gradient(circle, green 2px, transparent 2px);
+    background-size: 10px 4px; /* horizontal spacing × dot size */
+    background-repeat: repeat-x;
+    background-position: bottom;
+
+    margin-bottom: 2rem;
+}
+
 .gh-article-tag {
-    margin-bottom: 12px;
+    margin-bottom: 1rem;
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -340,6 +357,8 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 
 .gh-article-excerpt {
     font-size: 1.9rem;
+    color: black;
+    font-weight: bold;
 }
 
 .has-full-image .gh-article-excerpt {
@@ -985,4 +1004,24 @@ body:not(.home-template) .gh-topic-grid .gh-card {
         width: 96px;
         height: 96px;
     }
+}
+
+.gh-article-footer {
+    margin-top: 2rem;
+}
+
+.gh-article-footer .gh-author-name-list {
+    justify-content: end;
+}
+
+.gh-article-footer .gh-author-name-list::after {
+    content: "";
+    width: 3em;
+    height: 1.1em;
+    margin-left: 0.5em;
+
+    background-image: url(
+    "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA1NCAyMCc+CiAgPHBvbHlnb24gcG9pbnRzPScwLDIwIDksMiAxOCwyMCcgZmlsbD0nIzAwNmUyNicvPgogIDxwb2x5Z29uIHBvaW50cz0nMTUsMjAgMjQsMiAzMywyMCcgZmlsbD0nIzAwNmUyNicvPgogIDxwb2x5Z29uIHBvaW50cz0nMzAsMjAgMzksMiA0OCwyMCcgZmlsbD0nIzAwNmUyNicvPgo8L3N2Zz4="
+    );
+    background-repeat: no-repeat;
 }
