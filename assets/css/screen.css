@@ -940,3 +940,53 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 .gh-article a:hover {
     text-decoration: underline;
 }
+
+.gh-author-image, .gh-author-image-list .gh-author-image, .gh-team-member-image {
+    border: 2px solid #006e26;
+}
+
+.gh-team-member {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.gh-team-member-image {
+    position: relative;
+    flex-shrink: 0;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.gh-team-member-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gh-team-member-image .gh-author-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.gh-team-member-info h2 {
+    margin-bottom: 4px;
+}
+
+@media (max-width: 767px) {
+    .gh-team-member {
+        gap: 20px;
+    }
+
+    .gh-team-member-image {
+        width: 96px;
+        height: 96px;
+    }
+}
