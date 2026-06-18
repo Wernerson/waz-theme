@@ -334,6 +334,16 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     color: #006E26; /*TODO*/
 }
 
+.gh-tag-title {
+    color: #006E26; /*TODO*/
+}
+
+.gh-tag-description {
+    font-size: 1.9rem;
+    color: #000;
+    font-weight: 700;
+}
+
 .gh-article-tags {
     width: 100%;
     display: flex;
