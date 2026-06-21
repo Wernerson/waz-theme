@@ -24,7 +24,9 @@
                         {{/if}}
 
                         <!-- Repurpose location as email-->
-                        <a href="mailto:{{location}}">{{> icons/email}}</a>
+                        {{#if location }}
+                            <a href="mailto:{{location}}">{{> icons/email}}</a>
+                        {{/if}}
                     </div>
                 </div>
             </section>
