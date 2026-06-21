@@ -8,6 +8,11 @@
     --color-primary-text: var(--color-darker-gray);
     --h1-size: 4.4rem;
     --footer-spacing: 120px;
+
+    /*Theme colors*/
+    --color-standpunkt: #eef7ef;
+    --color-red: #c4121a;
+    --color-green: #006e26;
 }
 
 @media (max-width: 767px) {
@@ -327,15 +332,15 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 .gh-article-header {
     position: relative;
     justify-items: start;
-    color: #006E26; /*TODO*/
+    color: var(--color-green);
 }
 
 .gh-article-title {
-    color: #006E26; /*TODO*/
+    color: var(--color-green);
 }
 
 .gh-tag-title {
-    color: #006E26; /*TODO*/
+    color: var(--color-green);
 }
 
 .gh-tag-description {
@@ -349,7 +354,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     display: flex;
     justify-content: space-between;
 
-    background-image: radial-gradient(circle, #006e26 2px, transparent 2px);
+    background-image: radial-gradient(circle, var(--color-green) 2px, transparent 2px);
     background-size: 10px 4px; /* horizontal spacing × dot size */
     background-repeat: repeat-x;
     background-position: bottom;
@@ -966,7 +971,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 }
 
 .gh-article a, h2, h3 {
-    color: #C4121A;
+    color: var(--color-red);
 }
 
 .gh-article a {
@@ -978,7 +983,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 }
 
 .gh-author-image, .gh-author-image-list .gh-author-image, .gh-team-member-image {
-    border: 2px solid #006e26;
+    border: 2px solid var(--color-green);
 }
 
 .gh-team-member {
@@ -1055,7 +1060,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 /* Custom Snippet Styling */
 
 .gh-content blockquote.entrefilet {
-    color: #C4121A;
+    color: var(--color-red);
     text-align: center;
 
     font-size: 1.5em;
@@ -1067,9 +1072,18 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     padding-top: 1em;
     padding-bottom: 1em;
 
-    background-image: radial-gradient(circle, #C4121A 1.5px, transparent 1.5px), radial-gradient(circle, #C4121A 1.5px, transparent 1.5px);
+    background-image: radial-gradient(circle, var(--color-red) 1.5px, transparent 1.5px), radial-gradient(circle, var(--color-red) 1.5px, transparent 1.5px);
     background-size: 7px 3px, 7px 3px; /* horizontal spacing × dot size */
     background-repeat: repeat-x, repeat-x;
     background-position: top, bottom;
 }
 
+.gh-main.standpunkt {
+    background-color: var(--color-standpunkt);
+}
+
+.standpunkt .standpunkt-title {
+    color: black;
+    letter-spacing: 0.5em;
+    margin-bottom: 0.5em;
+}
