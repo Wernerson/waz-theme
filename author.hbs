@@ -15,26 +15,7 @@
 
                     <div class="gh-team-member-info">
                         <h2>{{name}} </h2>
-
-                        <b>
-                            <!-- Repurpose bluesky as role -->
-                            {{#if bluesky}}
-                                {{#match bluesky '==' 'RL'}}
-                                    Redaktionsleiter
-                                {{/match}}
-                                {{#match bluesky '==' 'DR'}}
-                                    Dienstredaktion
-                                {{/match}}
-                                {{#match bluesky '==' 'RA'}}
-                                    Redaktionsassistenz
-                                {{/match}}
-                                {{#match bluesky '==' 'W'}}
-                                    Inserate & Beilagen
-                                {{/match}}
-                            {{else}}
-                                Redaktor/Redaktorin
-                            {{/if}}
-                        </b>
+                        <b>{{>title}}</b>
 
                         {{#if bio}}
                             <div class="gh-author-bio">

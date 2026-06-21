@@ -1,0 +1,17 @@
+<!-- Repurpose bluesky as role -->
+{{#if bluesky}}
+    {{#match bluesky '==' 'RL'}}
+        Redaktionsleiter
+    {{/match}}
+    {{#match bluesky '==' 'DR'}}
+        Dienstredaktion
+    {{/match}}
+    {{#match bluesky '==' 'RA'}}
+        Redaktionsassistenz
+    {{/match}}
+    {{#match bluesky '==' 'W'}}
+        Inserate & Beilagen
+    {{/match}}
+{{else}}
+    Redaktor/Redaktorin
+{{/if}}
