@@ -1041,6 +1041,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     margin-top: 2rem;
 }
 
+
 .gh-main:not(.standpunkt) .gh-article-footer .gh-author-name-list {
     justify-content: end;
 }
@@ -1057,6 +1058,9 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     background-repeat: no-repeat;
 }
 
+.gh-main.standpunkt .gh-article-footer .gh-author-name-list {
+    align-items: center;
+}
 
 .gh-main.standpunkt .gh-article-footer .gh-author-name {
     display: flex;
