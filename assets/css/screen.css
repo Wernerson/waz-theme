@@ -10,7 +10,7 @@
     --footer-spacing: 120px;
 
     /*Theme colors*/
-    --color-standpunkt: #eef7ef;
+    --background-standpunkt: linear-gradient(135deg,#f2f7f2,#f1f6f1);
     --color-red: #c4121a;
     --color-green: #006e26;
 }
@@ -1041,11 +1041,11 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     margin-top: 2rem;
 }
 
-.gh-article-footer .gh-author-name-list {
+.gh-main:not(.standpunkt) .gh-article-footer .gh-author-name-list {
     justify-content: end;
 }
 
-.gh-article-footer .gh-author-name-list::after {
+.gh-main:not(.standpunkt) .gh-article-footer .gh-author-name-list::after {
     content: "";
     width: 3em;
     height: 1.1em;
@@ -1055,6 +1055,21 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA1NCAyMCc+CiAgPHBvbHlnb24gcG9pbnRzPScwLDIwIDksMiAxOCwyMCcgZmlsbD0nIzAwNmUyNicvPgogIDxwb2x5Z29uIHBvaW50cz0nMTUsMjAgMjQsMiAzMywyMCcgZmlsbD0nIzAwNmUyNicvPgogIDxwb2x5Z29uIHBvaW50cz0nMzAsMjAgMzksMiA0OCwyMCcgZmlsbD0nIzAwNmUyNicvPgo8L3N2Zz4="
     );
     background-repeat: no-repeat;
+}
+
+
+.gh-main.standpunkt .gh-article-footer .gh-author-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.gh-main.standpunkt .gh-article-footer .gh-author-name img{
+    max-height: 5em;
+}
+
+.gh-main.standpunkt .gh-article-footer .gh-author-name a {
+    color: black;
+    font-weight: normal;
 }
 
 /* Custom Snippet Styling */
@@ -1079,7 +1094,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 }
 
 .gh-main.standpunkt {
-    background-color: var(--color-standpunkt);
+    background: var(--background-standpunkt);
 }
 
 .standpunkt .standpunkt-title {

@@ -10,6 +10,8 @@
 
                 <h1 class="gh-article-title">{{title}}</h1>
 
+                {{> "post-meta"}}
+
             </header>
 
             <section class="gh-content gh-canvas">
@@ -17,7 +19,18 @@
             </section>
 
             <footer class="gh-article-footer gh-canvas">
-                {{> "post-meta"}}
+                <div class="gh-author-name-list">
+                    {{#foreach authors}}
+                        <h4 class="gh-author-name">
+
+                            {{#if cover_image}} <!--Use cover_image as signature-->
+                                <img src="{{cover_image}}" alt="{{name}}">
+                            {{/if}}
+                            <a href="{{url}}">{{name}}</a>
+                        </h4>
+                        {{#unless @last}}&nbsp;/&nbsp;{{/unless}}
+                    {{/foreach}}
+                </div>
             </footer>
 
         </article>
