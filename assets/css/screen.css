@@ -373,7 +373,7 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     margin-bottom: 0;
 }
 
-.gh-article-tag {
+.gh-article-tag, .gh-standpunkt-tag {
     margin-bottom: 1rem;
     font-size: 1.2rem;
     font-weight: 600;

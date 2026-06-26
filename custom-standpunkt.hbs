@@ -8,6 +8,13 @@
 
                 <h3 class="standpunkt-title">STANDPUNKT</h3>
 
+                <div class="gh-standpunkt-tags">
+                    {{#foreach tags}}
+                        <a class="gh-standpunkt-tag" href="{{url}}">{{name}}</a>
+                        {{#unless @last}}&nbsp;/&nbsp;{{/unless}}
+                    {{/foreach}}
+                </div>
+
                 <h1 class="gh-article-title">{{title}}</h1>
 
                 {{> "post-meta"}}
