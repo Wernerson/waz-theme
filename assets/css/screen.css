@@ -24,6 +24,7 @@
 
 figcaption {
     font-size: 1.3rem;
+    color: var(--color-green);
 }
 
 .has-full-image figcaption {
