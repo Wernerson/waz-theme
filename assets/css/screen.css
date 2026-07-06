@@ -27,6 +27,14 @@ figcaption {
     color: var(--color-green);
 }
 
+.gh-cover figcaption {
+    position: sticky;
+    color: white;
+    text-align: right;
+    align-self: flex-end;
+    margin: 16px 0;
+}
+
 .has-full-image figcaption {
     padding: 0 16px;
 }
@@ -556,8 +564,9 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     --cover-height: 50vh;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: -16px;
     background-color: rgba(0, 0, 0, 0.4);
 }
