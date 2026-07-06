@@ -10,9 +10,10 @@
     --footer-spacing: 120px;
 
     /*Theme colors*/
-    --background-standpunkt: linear-gradient(135deg,#f2f7f2,#f1f6f1);
     --color-red: #c4121a;
     --color-green: #006e26;
+    --background-standpunkt: linear-gradient(135deg,#f2f7f2,#f1f6f1);
+    --background-kasten: #e6f4e8;
 }
 
 @media (max-width: 767px) {
@@ -1076,7 +1077,24 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     font-weight: normal;
 }
 
-/* Custom Snippet Styling */
+/* Kasten */
+
+.gh-content aside.kasten {
+    background-color: var(--background-kasten);
+    padding: 1em 0.5em;
+    background-image: radial-gradient(circle, var(--color-green) 1.5px, transparent 1.5px), radial-gradient(circle, var(--color-green) 1.5px, transparent 1.5px);
+    background-size: 7px 3px, 7px 3px; /* horizontal spacing × dot size */
+    background-repeat: repeat-x, repeat-x;
+    background-position: top, bottom;
+}
+
+.gh-content aside.kasten h1{
+    color: var(--color-green);
+    font-size: 1.5em;
+}
+
+
+/* Entrefillet */
 
 .gh-content blockquote.entrefilet {
     color: var(--color-red);
@@ -1096,6 +1114,8 @@ body:not(.home-template) .gh-topic-grid .gh-card {
     background-repeat: repeat-x, repeat-x;
     background-position: top, bottom;
 }
+
+/* Standpunkt */
 
 .gh-main.standpunkt {
     background: var(--background-standpunkt);
